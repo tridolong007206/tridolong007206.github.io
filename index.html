@@ -8,13 +8,109 @@
 
 <title>Do Long Tri</title>
 
-<link rel="stylesheet" href="style.css">
+<style>
+
+body{
+margin:0;
+font-family: Arial, sans-serif;
+color:white;
+text-align:center;
+background:linear-gradient(120deg,#3b82f6,#9333ea,#ec4899);
+min-height:100vh;
+}
+
+header{
+padding:80px 20px;
+}
+
+h1{
+font-size:60px;
+margin-bottom:10px;
+}
+
+.subtitle{
+font-size:22px;
+}
+
+.tagline{
+opacity:0.9;
+margin-bottom:20px;
+}
+
+.avatar{
+width:160px;
+border-radius:20px;
+border:4px solid white;
+margin-top:20px;
+}
+
+section{
+padding:60px 20px;
+}
+
+.about{
+max-width:700px;
+margin:auto;
+line-height:1.7;
+}
+
+.cards{
+margin-top:40px;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+}
+
+.card{
+background:white;
+color:black;
+width:260px;
+border-radius:15px;
+overflow:hidden;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:160px;
+object-fit:cover;
+}
+
+.gallery{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.gallery img{
+width:200px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.1);
+}
+
+footer{
+padding:40px;
+opacity:0.8;
+}
+
+</style>
 
 </head>
 
 <body>
 
-<header class="hero">
+<header>
 
 <h1>Do Long Tri</h1>
 
@@ -39,18 +135,17 @@ Born by the sea • Now surviving Hanoi
 <p>Currently studying at Foreign Trade University in Hanoi.</p>
 
 <p>
-Like to meet interesting people,
-try random ideas,
+Like to meet interesting people, try random ideas,
 and occasionally make questionable life decisions.
 </p>
 
 </section>
 
-<section class="cards">
+<section>
 
 <h2>A Few Things About Me</h2>
 
-<div class="grid">
+<div class="cards">
 
 <div class="card">
 
@@ -74,7 +169,7 @@ Slightly chaotic
 
 <p>
 Former member of CFAA<br>
-Student projects & events
+Student events & projects
 </p>
 
 </div>
@@ -96,11 +191,11 @@ Exploring the city
 
 </section>
 
-<section class="gallery">
+<section>
 
 <h2>Moments</h2>
 
-<div class="photos">
+<div class="gallery">
 
 <img src="img/sea_home.jpg">
 <img src="img/me_funny.png">
