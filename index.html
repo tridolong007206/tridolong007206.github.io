@@ -7,16 +7,19 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
+    <!-- Particles container (nền hạt) -->
+    <div class="particles"></div>
+
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero fade-up">
         <h1 class="name">Do Long Tri</h1>
         <p class="subtitle">Student at Foreign Trade University</p>
         <p class="subtitle">Salty soul from Central Vietnam 🌊</p>
-        <img src="images/me_funny.png" alt="Do Long Tri" class="avatar">
+        <img src="images/me_funny.png" alt="Do Long Tri" class="avatar tilt-img">
     </section>
 
     <!-- About Section -->
-    <section class="about">
+    <section class="about fade-up">
         <h2>About Me</h2>
         <p>
             Like to meet interesting people, try random ideas,
@@ -26,7 +29,7 @@
 
     <!-- Cards Section -->
     <section class="cards">
-        <div class="card">
+        <div class="card fade-up tilt-card">
             <img src="images/me_funny.png" alt="Personality">
             <h3>Personality</h3>
             <p>
@@ -35,7 +38,7 @@
                 Slightly chaotic
             </p>
         </div>
-        <div class="card">
+        <div class="card fade-up tilt-card">
             <img src="images/club_cfaa.jpg" alt="Club Life">
             <h3>Club Life</h3>
             <p>
@@ -43,7 +46,7 @@
                 Student projects & events
             </p>
         </div>
-        <div class="card">
+        <div class="card fade-up tilt-card">
             <img src="images/hobby.jpg" alt="Hobbies">
             <h3>Hobbies</h3>
             <p>
@@ -53,9 +56,47 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer với chữ chạy -->
     <footer>
-        <p>made with caffeine ☕</p>
+        <div class="marquee">
+            <span>☕ made with caffeine &nbsp;&nbsp;&nbsp; ☕ made with caffeine &nbsp;&nbsp;&nbsp; ☕ made with caffeine &nbsp;&nbsp;&nbsp; </span>
+        </div>
     </footer>
+
+    <!-- JavaScript nhẹ cho hiệu ứng scroll và tilt -->
+    <script>
+        // Hiệu ứng fade-up khi cuộn
+        const faders = document.querySelectorAll('.fade-up');
+        const appearOptions = { threshold: 0.2, rootMargin: '0px 0px -50px 0px' };
+        const appearOnScroll = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('appear');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+        faders.forEach(fader => appearOnScroll.observe(fader));
+
+        // Hiệu ứng tilt cho card và avatar (xoay theo chuột)
+        const tiltElements = document.querySelectorAll('.tilt-card, .tilt-img');
+        tiltElements.forEach(el => {
+            el.addEventListener('mousemove', (e) => {
+                const rect = el.getBoundingClientRect();
+                const x = e.clientX - rect.left; // vị trí chuột theo chiều ngang trong phần tử
+                const y = e.clientY - rect.top; // vị trí chuột theo chiều dọc
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                const deltaX = (x - centerX) / centerX; // -1 đến 1
+                const deltaY = (y - centerY) / centerY; // -1 đến 1
+                const rotateX = deltaY * -10; // giới hạn 10 độ
+                const rotateY = deltaX * 10;
+                el.style.transform = `perspective(500px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+            });
+            el.addEventListener('mouseleave', () => {
+                el.style.transform = 'perspective(500px) rotateX(0) rotateY(0) scale(1)';
+            });
+        });
+    </script>
 </body>
 </html>
