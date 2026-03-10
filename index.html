@@ -5,7 +5,7 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Do Long Tri</title>
 
@@ -146,16 +146,16 @@ made with caffeine, curiosity and questionable life decisions ☕
 
 <script>
 
-window.addEventListener("scroll",()=>{
+window.addEventListener("scroll",function(){
 
-let scrollTop=document.documentElement.scrollTop
-let height=document.documentElement.scrollHeight-document.documentElement.clientHeight
+let scrollTop=document.documentElement.scrollTop;
+let height=document.documentElement.scrollHeight-document.documentElement.clientHeight;
 
-let progress=(scrollTop/height)*100
+let progress=(scrollTop/height)*100;
 
-document.getElementById("progress").style.width=progress+"%"
+document.getElementById("progress").style.width=progress+"%";
 
-})
+});
 
 </script>
 
