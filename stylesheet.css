@@ -1,13 +1,15 @@
-/* latin-ext */ @font-face { font-family: 'Lato'; font-style: italic; font-weight: 400; src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2'); unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; } /* latin */ @font-face { font-family: 'Lato'; font-style: italic; font-weight: 400; src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; } /* latin-ext */ @font-face { font-family: 'Lato'; font-style: italic; font-weight: 700; src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2'); unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; } /* latin */ @font-face { font-family: 'Lato'; font-style: italic; font-weight: 700; src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; } /* latin-ext */ @font-face { font-family: 'Lato'; font-style: normal; font-weight: 400; src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2'); unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; } /* latin */ @font-face { font-family: 'Lato'; font-style: normal; font-weight: 400; src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; } /* latin-ext */ @font-face { font-family: 'Lato'; font-style: normal; font-weight: 700; src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2'); unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; } /* latin */ @font-face { font-family: 'Lato'; font-style: normal; font-weight: 700; src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; } a { color: #1772d0; text-decoration: none; } a:focus, a:hover { color: #f09228; text-decoration: none; } body, td, th, tr, p, a { font-family: 'Lato', Verdana, Helvetica, sans-serif; font-size: 14px; } strong { font-family: 'Lato', Verdana, Helvetica, sans-serif; font-size: 14px; } h2 { margin: 0; font-weight: normal; font-family: 'Lato', Verdana, Helvetica, sans-serif; font-size: 22px; } .papertitle { font-family: 'Lato', Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: 700; } .name { padding-top: 20px; margin: 0; font-family: 'Lato', Verdana, Helvetica, sans-serif; font-size: 32px; } .one { width: 160px; height: 160px; position: relative; } .two { width: 160px; height: 160px; position: absolute; transition: opacity .2s ease-in-out; -moz-transition: opacity .2s ease-in-out; -webkit-transition: opacity .2s ease-in-out; } .fade { transition: opacity .2s ease-in-out; -moz-transition: opacity .2s ease-in-out; -webkit-transition: opacity .2s ease-in-out; } span.highlight { background-color: #ffffd0; } .colored-box { color: black; padding: 20px; display: inline-block; border-radius: 10px; }
-/* -------- BACKGROUND -------- */
+/* ===== GLOBAL ===== */
 
 body{
 margin:0;
-background: linear-gradient(-45deg,#3b82f6,#9333ea,#ec4899,#f59e0b);
-background-size:400% 400%;
-animation: gradientMove 12s ease infinite;
+font-family:'Lato', sans-serif;
 color:white;
 text-align:center;
+
+/* animated gradient */
+background:linear-gradient(-45deg,#3b82f6,#9333ea,#ec4899,#f59e0b);
+background-size:400% 400%;
+animation:gradientMove 12s ease infinite;
 }
 
 @keyframes gradientMove{
@@ -16,7 +18,17 @@ text-align:center;
 100%{background-position:0% 50%;}
 }
 
-/* -------- HERO -------- */
+h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+h2{
+font-size:28px;
+margin-top:40px;
+}
+
+/* ===== HERO ===== */
 
 .hero{
 padding:100px 20px 60px 20px;
@@ -24,10 +36,11 @@ padding:100px 20px 60px 20px;
 
 .hero img{
 width:200px;
-border-radius:15px;
-margin-top:25px;
-transform:rotate(-4deg);
+border-radius:16px;
 border:5px solid white;
+
+transform:rotate(-4deg);
+
 transition:0.4s;
 }
 
@@ -35,17 +48,17 @@ transition:0.4s;
 transform:rotate(0deg) scale(1.1);
 }
 
-/* -------- ABOUT -------- */
+/* ===== ABOUT ===== */
 
 .about{
 max-width:700px;
 margin:auto;
 padding:40px 20px;
-font-size:16px;
 line-height:1.8;
+font-size:17px;
 }
 
-/* -------- CARD AREA -------- */
+/* ===== CARD GRID ===== */
 
 .cards{
 display:flex;
@@ -55,19 +68,24 @@ gap:35px;
 padding:60px 20px;
 }
 
+/* ===== CARD ===== */
+
 .card{
+
 width:260px;
-border-radius:18px;
-overflow:hidden;
 
 background:rgba(255,255,255,0.15);
-backdrop-filter:blur(12px);
+backdrop-filter:blur(10px);
 
-transition:0.4s;
+border-radius:18px;
+
+overflow:hidden;
+
+transition:0.35s;
 }
 
 .card:hover{
-transform:translateY(-15px) rotate(1deg) scale(1.05);
+transform:translateY(-15px) scale(1.05);
 }
 
 .card img{
@@ -82,11 +100,13 @@ margin:15px 0 10px 0;
 
 .card p{
 padding:0 20px 20px 20px;
+line-height:1.6;
 }
 
-/* -------- FOOTER -------- */
+/* ===== FOOTER ===== */
 
 footer{
-padding:50px;
+margin-top:40px;
+padding:40px;
 opacity:0.8;
 }
