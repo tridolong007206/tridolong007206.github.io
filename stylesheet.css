@@ -189,10 +189,6 @@ body {
     font-weight: 350;
 }
 
-.about:hover p {
-    transform: scale(1.02);
-}
-
 /* === Cards Section === */
 .cards {
     display: grid;
@@ -281,29 +277,25 @@ footer {
 }
 
 .marquee-left-to-right {
-    position: relative;
     white-space: nowrap;
     overflow: hidden;
     color: #f0f0f0;
     font-size: 1.2rem;
     letter-spacing: 2px;
-    height: 2em;
     width: 100%;
 }
 
 .marquee-left-to-right span {
     display: inline-block;
-    position: absolute;
-    left: 0;
-    animation: slideLeftToRight 8s linear infinite;
+    animation: scrollLeftToRight 8s linear infinite;
 }
 
-@keyframes slideLeftToRight {
+@keyframes scrollLeftToRight {
     0% {
-        left: -100%;
+        transform: translateX(-100%);
     }
     100% {
-        left: 100%;
+        transform: translateX(100vw);
     }
 }
 
@@ -347,5 +339,13 @@ footer {
     }
     .marquee-left-to-right {
         font-size: 1rem;
+    }
+    @keyframes scrollLeftToRight {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(100vw);
+        }
     }
 }
